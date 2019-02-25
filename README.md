@@ -104,3 +104,20 @@ web创作者们要求自己能对文档产生更大的影响力，并一直对�
 达成创作者和用户之间的成功谈判是CSS的主要愿景之一，如果成功，创作者将获得他们在文档展示上应有的影响力，不会觉得的他们是被迫来展示HTML和其它技巧，另一方面，用户可以自由的文档展示，他们既可以选择创作者制定的样式展示，也可以选择自己的样式展示。
 
 其实在大多数情况下，创作者不会和用户产生冲突，当二者都不想给文档指定特定样式时，浏览器就必须带一个默认的样式表来对HTML进行默认展示，因此，关于CSS的定义将会有三个来源：创作者、用户、浏览器，CSS能够将这三者合并后来进行最终的文档渲染，我们将处理这几种样式的组合 — 解决三者之间可能出现的冲突的过程称之为“串联|级联(cascading)”。
+
+### 1.3.1 CSS的发展
+第一版css提案是本着公开交流web如何发展的精神而提出的，并且在公开的邮件列表中进行了讨论，许多人[Bos 1994][Behlendorf 1994][Wei 1994]对该草案做出了回应，促进了草案的进一步发展，在1995年期间，共发布了大约8次修订，该年12月份发布的最后一次修订版被选为稳定版，并鼓励浏览器厂商将该版本作为基础实现标准。
+
+除了一些小的意外错误，19995年12月份发布的草案在语法上基本上稳定保持了下来，其中第一份部分关于css语法的介绍依然保持下来：
+
+> Designing simple style sheets is easy. One only needs to know a little HTML and some basic desktop publishing terminology. E.g., to set the text color of 'H1' elements to blue, one can say:
+`` H1 { color: blue }``
+> The example consists of two main parts: selector ('H1') and declaration ('color: blue'). The declaration has two parts, property ('color') and value ('blue').
+
+> 设计简单的样式表很容易，你只需知道一点HTML知识和一些基础的桌面出版术语，例如，要将'H1'标签的文本颜色设置为蓝色，可以这样说：
+`` H1 { color: blue } ``
+> 该例子包含了两个主要部分：选择器(h1)和声明(color: blue)，声明分为两部分：属性(color)和属性值(blue)。
+
+1996年12月，CSS1规范成为W3C的推荐标准[CSS1 1996]。1998年5月，CSS2成为W3C推荐标准[CSS2 1998]，第6章(层叠样式表)将会更详细的叙述其发展史。
+
+在第一版CSS天发布十年后，所有的主流web浏览器都支持了CSS，并且大多数网页都使用CSS，全面评估CSS本身及其对web的影响可能还为时尚早，但我们可以学习和研究css的设计，将其与其它样式表语言和香港方案做比较。
