@@ -14,7 +14,9 @@
     * [1.2.1 所见即所得——矛盾的模式](#所见即所得——矛盾的模式)
     * [1.2.2 web的特征](#web的特征)
     * [1.2.3 web样式表的机制](#web样式表的机制)
-  * [1.3CSS](#CSS)
+  * [1.3 CSS](#CSS)
+    * [1.3.1 CSS的发展](#1.3.1CSS的发展)
+  * [1.4 简要和总结](#简要和总结)
 
 
 # 译者序
@@ -122,7 +124,24 @@ web创作者们要求自己能对文档产生更大的影响力，并一直对�
 
 在第一版CSS天发布十年后，所有的主流web浏览器都支持了CSS，并且大多数网页都使用CSS，全面评估CSS本身及其对web的影响可能还为时尚早，但我们可以学习和研究css的设计，将其与其它样式表语言和香港方案做比较。
 
-## 1.4 摘要和总结
+## 1.4 简要和总结
 在文的本章节中介绍了一些关键概念，HTML是为web开发的一种简单的结构文档格式，当web创作者要求他们能对文档产生更多的表示性影响时，HTML开始发展成为一种表示性语言，而不是一种结构化语言，为了让抽象阶梯停止向下滑动，CSS被开发为web的样式表语言，自1980年以来，样式表一直是电子出版系统中的一部分，在web上，样式表的焦点从创作过程中的工具转移到内容生成后的内容复用工具。
 
 本文将详细地探讨为什么web需要不同于其它发布类型的样式表语言，以及这门语言是如何被设计出来的，然而，在探讨之前，还有必要探讨另外两个议题：首先，必须要理解结构化文档，因为样式表是应用在结构化文档之上的，其次，必须研究在web出现之前，样式表语言的发展情况，以此来确定这些样式表语言是否适用于web，这两项议题将分别在第2章和第3章中讨论。
+
+# 第2章 结构化文档
+样式表语言和结构化文档相互依赖，没有样式表，结构化文档将无法呈现，反之，没有结构化文档，样式表将无用武之地，因为二者的紧密关系，在学习样式表语言前，务必理解结构化文档。本章节将讨论一些对样式表语言产生了最多影响的结构化文档。
+
+在一部名为“结构化文档”的重要著作中[André, et al. 1989]，其主题思想是：
+> A document may be described as a collection of objects with higher-level objects formed from more primitive objects. The object relationships represent the logical relationships between components of the document. For example, the present document is described as a book at the highest level. The book is subdivided into chapters, each chapter into sections, subsections, paragraphs, and so forth. Such a document organization has come to be known as the structured document representation.
+
+> 文档可以被描述为由更原始的对象形成的更高级别对象的对象集合，对象之间的关系也可以表示为文档组件之间的逻辑关系，例如：本文档可以被描述为更高级别的书本，书本可以拆分成为章节，每个章节又可以拆分为小节，段落等，这种组织文档的方式就被称之为结构化文档展示。
+
+结构化文档展示性的一个重要特征在于它具有确定的抽象级别，当样式表与结构化文档相结合形成展示时，确定抽象的级别是尤为重要的。因此，本章第一部分将讨论抽象文档的抽象级别，并提出一个叫“抽象阶梯”的概念来度量web文档格式的抽象级别。
+
+本章的第二部分将介绍几种开创性的抽象化文档系统：Scribe、LaTex、开放式文档架构(ODA)、标准通用标记语言(SGML)、超文本标记语言(HTML)、可扩展性标记语言(XML)，针对每个系统都会在其历史和技术上进行简要介绍，并着重介绍它们与样式表语言之间的关系。
+
+第三部分将讨论web中语言转换和样式表语言之间的关系。
+
+## 2.1 抽象级别
+在早川一会(Hayakawa [Hayakawa 1940])的 ——《思想与行动中的语言》(思想与行动中的语言)一书中，他提出了语言的抽象阶梯概念，抽象阶梯的底部是一个对象，
