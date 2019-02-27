@@ -166,20 +166,20 @@ web创作者们要求自己能对文档产生更大的影响力，并一直对�
 - 文本是否能供机器阅读，意思是说：文档格式中是否有字符编号概念，还是文本被展示成了图片——在这种情况下，文本不可“阅读”。
 - 文本的逻辑顺序是否被保留，意思是说：用这种格式编写文档时，是否保留了内容在逻辑上的阅读顺序概念。
 - 文档是否可伸缩，意思是说：在不借助人造视觉器(译者注: 类似放大镜)的情况下放大文档。
-- 是否可以回流(reflow)？意思是说：文本是否可以被回流为行、列、页面？
+- 是否可能回流(reflow)？意思是说：文本是否可能被回流为行、列、页面？
 - 是否可以展示各种文本元素的角色？例如：创作者是否能将一部分文本标记为标题、段落，或者计算机程序中的变量名，能否对这些元素的角色进行区分是很重要的，例如：在以盲文的形式制作文档时，某些文本应该进行缩编(例如标题)，而其它文本则不用特殊处理(例如变量名)。
 - 文档格式是否与设备无关联，意思是说：文档使用该格式进行(译者注：这里是指web文档格式)编写后，能在不同的设备上展示出来(例如：打印机、屏幕、盲文打印机和文本合成器)，亦或只能展示于单独的设备类型？
 - 文档格式是否包含特定的程序语义？HTML是一种通用的文档格式，它并不试图描述来自更专业领域(如数学和化学)的语义，因此也不会包含特定应用程序的语义，包含特定应用程序语义的格式往往处于抽象阶梯的更高层。
 
-*表1*：抽象阶梯上各文档格式的对比
+**表1**：抽象阶梯上各文档格式的对比
 
 | |GIF, PNG|	private XMLvocabulary|	PDF|	XSL-FO|	HTML|	MathML|
 | :------| ------: | :------: |:------: |:------: |:------: |:------: |
-|application-specific semantics?|	no|	no|	no|	no|	no|	yes|
-|device-independent?|	no|	no|	no|	no|	yes|	yes|
-|roles known?|	no|	no|	no|	no|	yes|	yes|
-|text in logical order?|	unknown|	unknown|	no|	yes|	yes|	yes|
-|reflow possible?|	no|	unknown|	no|	yes|	yes|	yes|
-|scalable?|	no	unknown|	yes|	yes|	yes|	yes|
-|text machine-readable?|	no|	yes|	yes|	yes|	yes|	yes|
 |text human-readable?|	yes|	yes|	yes|	yes|	yes|	yes|
+|text machine-readable?|	no|	yes|	yes|	yes|	yes|	yes|
+|text in logical order?|	unknown|	unknown|	no|	yes|	yes|	yes|
+|scalable?|	no|	unknown|	yes|	yes|	yes|	yes|
+|reflow possible?|	no|	unknown|	no|	yes|	yes|	yes|
+|roles known?|	no|	no|	no|	no|	yes|	yes|
+|device-independent?|	no|	no|	no|	no|	yes|	yes|
+|application-specific semantics?|	no|	no|	no|	no|	no|	yes|
