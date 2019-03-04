@@ -196,3 +196,22 @@ web创作者们要求自己能对文档产生更大的影响力，并一直对�
 ## 2.2 结构化文档系统
 大约从1980年开始，电子出版和结构化文档领域出现了一个活跃的研究社区，该社区在电子出版会议议程、《电子出版-起源、传播、设计》杂志[电子出版社]上发表他们的研究成果，剑桥大学出版社还出版了一系列关于这一主题的书籍。Richard Furuta列举了文档预编系统历史上重要论文的重要部分: 基础资源[Furuta 1992]
 
+研究人员通常赞同开发商对文档格式进行中立化处理，因为这可以促进文档的交换，这也便于更好的理解格式化文档，但是对结构化文档的处理还有其它几种方案，这几种方案互相竞争而开发，本节将讨论这四种方案：
+
+20世纪70年代末，布赖恩·里德(BrianReid)开发了Scribe[Reid1980]。Scribe开创了结构化文档的概念，并对创作过程中的逻辑标记和展示模版进行了强制性区分，Scribe的设计哲学在 莱斯利·兰伯特(Leslie Lamport)的LaTex得到了延续，LaTex首次发布于1985[Lamport 1985]年，它是纳德·克努特(Donald Knuth)开发的Tex程序上的一个顶部宏包(macro package)，该宏包在Tex中负责底层格式化。
+
+开放式文档结构 (ODA) 是一套ISO标准，它用来促进文档的电子化交换，ODA文档既可以以逻辑化形式也可以以表示性形式展示文档。
+
+标准通用标记语言(SGML) [SGML 1986]及其前身GML是由Charles Goldfarb及其同事在1970年代和1980年代[Furuta等人]开发的。1986年，SGML成为ISO标准。
+
+本节将介绍这六种文档系统(Scribe、LaTeX、ODA、SGML、HTML和XML)，在讨论它们之前，以非正式的形式列出这六种系统的设计雄心和分别取得的成就可能对我们更有帮助(参见表2)。
+
+表2：6种不同的结构化文档系统的野心和成就
+| |Is primarily a system to define new languages?	|Has notion of document semantics?|	Has notion of document presentation?|	Enco-ding|	Reference|	Level of comp­lexity|	Main achieve­ment|
+| :---------------------- | :-------: | :-------------------: | :---: | :----: | :---: | :----: |:----: |
+|**Scribe**|	no|	yes|	yes|	text|	implementation|	moderate|	inspired LaTeX|
+|**LaTex**|	no|	yes|	yes|	text|	implementation|	moderate|	de facto format in scientific publishing|
+|**ODA**|	no|	yes|	yes|	binary|	specification|	high|	became ISO standard|
+|**SGML**|	yes|	no|	no|	text|	specification|	high|	became ISO standard, inspired HTML and XML|
+|**HTML**|	no|	yes|	some|	text|	specification & implementation|	moderate|	universally understood hypertext format|
+|**XML**|	yes|	no|	no|	text|	specification|	moderate|	syntactic basis for emerging formats|
