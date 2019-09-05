@@ -215,3 +215,15 @@ web创作者们要求自己能对文档产生更大的影响力，并一直对�
 |**SGML**|	yes|	no|	no|	text|	specification|	high|	became ISO standard, inspired HTML and XML|
 |**HTML**|	no|	yes|	some|	text|	specification & implementation|	moderate|	universally understood hypertext format|
 |**XML**|	yes|	no|	no|	text|	specification|	moderate|	syntactic basis for emerging formats|
+
+关于文档格式更为正式的分类，请参考《 The Origin of (Document) Species》
+
+除了表格2中列出的成就外，所有的系统都应该感谢它们激励了创作者和程序员，让他们看到了结构化文档的好处。
+下面关于各种结构化文件系统的讨论并没有遵循一个严格的模式。这些系统对它们的理解、它们的使用情况、以及目前关于每个系统的可用信息方面有更大的区别。这些描述的主要目的不是进行比较分析，而是讨论这些语言的某些方面，这些方面是作者在样式表的上下文中感兴趣的部分。
+
+### 2.2.1 抄写
+抄写系统是于20世纪70年代末由卡内基-卡梅隆大学的 Brian Reid 开发而成，抄写系统开创了结构化文档的创作方法。它鼓励创作者使用预定义的逻辑对象，作者通过不需指定任何格式就可以生成最终形式的文档。
+
+近些年，抄写系统发生了很多改变。这一章我们将讨论一份于1980年编写的抄写系统用户描述手册，该手册试图给出抄写系统的大概论述，而非所有功能的介绍。、
+
+#### 2.2.1.1 一份简单的文档
