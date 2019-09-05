@@ -216,6 +216,7 @@ web创作者们要求自己能对文档产生更大的影响力，并一直对�
 |**HTML**|	no|	yes|	some|	text|	specification & implementation|	moderate|	universally understood hypertext format|
 |**XML**|	yes|	no|	no|	text|	specification|	moderate|	syntactic basis for emerging formats|
 
+
 关于文档格式更为正式的分类，请参考《 The Origin of (Document) Species》
 
 除了表格2中列出的成就外，所有的系统都应该感谢它们激励了创作者和程序员，让他们看到了结构化文档的好处。
@@ -227,3 +228,10 @@ web创作者们要求自己能对文档产生更大的影响力，并一直对�
 近些年，抄写系统发生了很多改变。这一章我们将讨论一份于1980年编写的抄写系统用户描述手册，该手册试图给出抄写系统的大概论述，而非所有功能的介绍。、
 
 #### 2.2.1.1 一份简单的文档
+一份抄写文档可以非常简单：
+```
+@Make(Text)
+@Device(Diablo)
+@Heading(Comrades and Strangers)
+```
+上面的示例使用到了抄写系统的三个关键性概念：文档类型、命令和格式化环境。第一行从一组不同类型的文档类型中选出一个特定的文档类型(Text)。第二行是一个命令，它指定文档应该在特定的设备上打印。第三行指定某个字符串(Comrades and Strangers)是文档的标题。
